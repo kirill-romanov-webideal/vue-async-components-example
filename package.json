@@ -1,11 +1,24 @@
 {
-  "name": "test-vue",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue-async-components-example",
+  "version": "0.1.5",
+  "private": false,
+  "description": "Example of async components",
+  "author": "https://github.com/kirill-romanov-webideal",
+  "license": "MIT",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "*.json",
+    "*.js",
+    "components/*"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name async-components ./components/index.js"
   },
+  "main": "./components/index.js",
   "dependencies": {
     "core-js": "^3.4.3",
     "vue": "^2.6.10"
