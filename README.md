@@ -1,4 +1,6 @@
-# test-vue
+# vue-async-components
+
+Export async vue components.
 
 ## Project setup
 ```
